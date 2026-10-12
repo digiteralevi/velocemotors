@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Veloce Motors | Luxury Car Showroom</title>
+<meta name="description" content="Certified luxury cars, transparent pricing and financing help. Book a private viewing or test drive.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--black:#050505;--panel:#0e0f11;--panel2:#15171a;--paper:#f4f4f2;--white:#fff;--ink:#0a0a0a;--mute:#6b6e73;--mute-d:#a3a7ad;--line-d:rgba(255,255,255,.12);--line-l:rgba(0,0,0,.12);--sans:Inter,system-ui,sans-serif}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--black);color:var(--white);font-family:var(--sans);line-height:1.55;-webkit-font-smoothing:antialiased;padding-bottom:84px}
+@media(min-width:760px){body{padding-bottom:0}}
+a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
+h1,h2,h3{margin:0;letter-spacing:-.03em;line-height:1.02;font-weight:600}
+:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.light :focus-visible{outline-color:#000}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.demo{background:#fff;color:#000;text-align:center;font-size:.78rem;padding:7px 14px}.demo a{text-decoration:underline;text-underline-offset:3px}
+.util{display:none;background:#0b0b0c;border-bottom:1px solid var(--line-d);font-size:.78rem;color:var(--mute-d)}
+.util .wrap{display:flex;justify-content:space-between;gap:20px;height:36px;align-items:center}
+@media(min-width:760px){.util{display:block}}
+nav{position:sticky;top:0;z-index:40;background:rgba(5,5,5,.72);backdrop-filter:blur(16px) saturate(140%);-webkit-backdrop-filter:blur(16px) saturate(140%);border-bottom:1px solid var(--line-d)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:700;letter-spacing:.32em;font-size:1.05rem}.logo small{display:block;font-weight:500;letter-spacing:.38em;font-size:.55rem;color:var(--mute-d);margin-top:-2px}
+nav ul{display:none;gap:30px;list-style:none;margin:0;padding:0;font-size:.9rem;color:#d4d6da}
+nav ul a:hover{color:#fff}
+@media(min-width:900px){nav ul{display:flex}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 26px;border-radius:999px;font-weight:600;font-size:.92rem;background:#fff;color:#000;transition:transform .2s,box-shadow .2s,background .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 34px -10px rgba(255,255,255,.5)}
+.btn.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4)}.btn.ghost:hover{background:rgba(255,255,255,.1);box-shadow:none}
+.btn.dark{background:#000;color:#fff}.btn.dark:hover{box-shadow:0 12px 30px -10px rgba(0,0,0,.6)}
+.btn.sm{min-height:44px;padding:0 20px;font-size:.86rem}
+nav .btn{display:none}@media(min-width:760px){nav .btn{display:inline-flex}}
+.hero{position:relative;min-height:calc(100svh - 100px);display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;background:radial-gradient(80% 60% at 70% 30%,#2a2c31 0,#0a0a0b 70%)}
+.hero video,.hero .poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.78) 0%,rgba(0,0,0,.35) 55%,rgba(0,0,0,.1) 100%),linear-gradient(0deg,rgba(0,0,0,.85) 0%,transparent 45%)}
+.hero .wrap{position:relative;z-index:2;padding-top:90px;padding-bottom:34px;width:100%}
+.eyebrow{font-size:.74rem;letter-spacing:.3em;text-transform:uppercase;color:#cfd2d7}
+.hero h1{font-size:clamp(3rem,9.5vw,7.4rem);margin:14px 0 18px;max-width:900px}
+.hero h1 em{font-style:normal;-webkit-text-stroke:1.5px #fff;color:transparent}
+.hero p.lead{max-width:470px;color:#d4d6da;margin:0 0 26px;font-size:1.05rem}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.finder{margin-top:44px;background:rgba(14,15,17,.72);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid var(--line-d);border-radius:22px;padding:14px;display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:760px){.finder{grid-template-columns:1fr 1fr 1fr auto;align-items:end}}
+.finder label{display:block;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mute-d);margin:0 0 5px 4px}
+select,input{width:100%;min-height:48px;font:inherit;font-size:16px;color:#fff;background:rgba(255,255,255,.07);border:1px solid var(--line-d);border-radius:14px;padding:0 14px;outline:none}
+select option{background:#111;color:#fff}
+select:focus,input:focus{border-color:#fff}
+section{padding:78px 0}
+.light{background:var(--paper);color:var(--ink)}
+.head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:30px}
+.head h2{font-size:clamp(2.2rem,5.4vw,3.8rem)}
+.head p{max-width:400px;margin:0;color:var(--mute-d);font-size:.96rem}.light .head p{color:var(--mute)}
+.lab{font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--mute-d);margin-bottom:12px}.light .lab{color:var(--mute)}
+.feat{display:grid;gap:14px;grid-template-columns:1fr}
+@media(min-width:620px){.feat{grid-template-columns:1fr 1fr}}@media(min-width:980px){.feat{grid-template-columns:repeat(4,1fr)}}
+.fc{background:var(--panel);border:1px solid var(--line-d);border-radius:22px;padding:22px;transition:transform .25s,border-color .25s}
+.fc:hover{transform:translateY(-4px);border-color:rgba(255,255,255,.35)}
+.fc .ic{width:46px;height:46px;border-radius:14px;background:var(--panel2);border:1px solid var(--line-d);display:grid;place-items:center;margin-bottom:46px}
+.fc svg{width:22px;height:22px;stroke:#fff;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.fc h3{font-size:1.15rem;letter-spacing:-.02em;margin-bottom:6px}.fc p{margin:0;color:var(--mute-d);font-size:.92rem}
+.count{font-size:.9rem;color:var(--mute)}
+.cars{display:grid;gap:18px;grid-template-columns:1fr}
+@media(min-width:620px){.cars{grid-template-columns:1fr 1fr}}@media(min-width:980px){.cars{grid-template-columns:repeat(3,1fr)}}
+.car{background:#fff;border:1px solid var(--line-l);border-radius:24px;overflow:hidden;display:flex;flex-direction:column;transition:transform .3s,box-shadow .3s}
+.car:hover{transform:translateY(-5px);box-shadow:0 24px 50px -22px rgba(0,0,0,.35)}
+.car .ph{aspect-ratio:4/3;position:relative;overflow:hidden;background:#111}
+.car .ph img{width:100%;height:100%;object-fit:cover;transition:transform .9s}.car:hover .ph img{transform:scale(1.05)}
+.car .ph.empty{display:flex;align-items:flex-end;padding:16px;color:#fff;font-weight:600;font-size:1.2rem;letter-spacing:-.02em}
+.badge{position:absolute;top:12px;left:12px;background:#fff;color:#000;font-size:.68rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:5px 11px;border-radius:999px}
+.car .b{padding:18px 20px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.car h3{font-size:1.4rem}
+.spec{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.82rem;color:var(--mute)}
+.car .buy{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:auto;padding-top:12px;border-top:1px solid var(--line-l)}
+.price{font-size:1.5rem;font-weight:600;letter-spacing:-.03em}.price small{display:block;font-size:.68rem;font-weight:500;color:var(--mute);letter-spacing:.1em;text-transform:uppercase}
+.none{grid-column:1/-1;padding:40px;text-align:center;color:var(--mute)}
+.calc{display:grid;gap:22px;grid-template-columns:1fr}
+@media(min-width:900px){.calc{grid-template-columns:1fr 1fr;align-items:stretch}}
+.cpanel{background:var(--panel);border:1px solid var(--line-d);border-radius:26px;padding:24px}
+.cpanel label{display:block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mute-d);margin:16px 0 6px}.cpanel label:first-child{margin-top:0}
+input[type=range]{padding:0;min-height:32px;accent-color:#fff;background:none;border:0}
+.out{display:flex;flex-direction:column;justify-content:center;gap:6px}
+.out .big{font-size:clamp(3rem,8vw,5rem);font-weight:600;letter-spacing:-.04em;line-height:1}
+.out .row{display:flex;justify-content:space-between;gap:12px;font-size:.9rem;color:var(--mute-d);padding:8px 0;border-top:1px solid var(--line-d)}
+.out .row b{color:#fff;font-weight:500}
+.fine{font-size:.78rem;color:var(--mute-d);margin:8px 0 14px}
+.promo{background:#000;color:#fff;border-radius:28px;padding:clamp(28px,6vw,56px);display:grid;gap:18px;align-items:center;grid-template-columns:1fr;position:relative;overflow:hidden;background-size:cover;background-position:center}
+.promo::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.88),rgba(0,0,0,.45))}
+.promo>*{position:relative}
+.promo h2{font-size:clamp(2rem,5vw,3.2rem);max-width:520px}.promo p{margin:0;color:#cfd2d7;max-width:440px}.promo .btn{align-self:flex-start;margin-top:6px}
+.band2{position:relative;min-height:78svh;display:flex;align-items:center;overflow:hidden;padding:0;background:radial-gradient(70% 70% at 30% 40%,#2b2d32,#050505)}
+.band2 video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.band2::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.84),rgba(0,0,0,.38) 62%,rgba(0,0,0,.15))}
+.band-in{position:relative;z-index:2;width:100%}
+.band2 h2{font-size:clamp(2.6rem,8vw,6rem);max-width:760px;margin:12px 0 16px}
+.band2 p{color:#d4d6da;max-width:440px;margin:0 0 24px}
+.faq{max-width:760px}
+details{border-bottom:1px solid var(--line-l);padding:18px 0}
+summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:10px;min-height:32px}
+summary::after{content:"+";font-size:1.4rem;line-height:1}details[open] summary::after{content:"\2212"}
+details p{color:var(--mute);margin:10px 0 0}
+footer{background:#000;border-top:1px solid var(--line-d);padding:56px 0 34px;color:var(--mute-d);font-size:.9rem}
+footer .g{display:grid;gap:26px;grid-template-columns:1fr}@media(min-width:760px){footer .g{grid-template-columns:1.4fr 1fr 1fr}}
+footer h4{margin:0 0 10px;color:#fff;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase}
+footer a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+.cred{margin-top:34px;padding-top:20px;border-top:1px solid var(--line-d);font-size:.84rem}
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:45;padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(5,5,5,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line-d)}
+.mbar .btn{width:100%;min-height:50px}@media(min-width:760px){.mbar{display:none}}
+dialog{border:0;border-radius:26px;padding:0;width:min(480px,calc(100% - 24px));background:#0e0f11;color:#fff;border:1px solid var(--line-d);box-shadow:0 30px 90px rgba(0,0,0,.7)}
+dialog::backdrop{background:rgba(0,0,0,.7);backdrop-filter:blur(5px)}
+.dlg{padding:26px}.dlg h2{font-size:1.9rem;margin-bottom:4px}.dlg .s{color:var(--mute-d);font-size:.9rem;margin:0 0 6px}
+.dlg label{display:block;font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;color:var(--mute-d);margin:12px 0 5px}
+.dlg .row{display:flex;gap:10px;margin-top:18px}.dlg .row .btn{flex:1}
+.msg{min-height:20px;font-size:.86rem;color:#ff8d7a;margin:10px 0 0}
+.toast{position:fixed;left:50%;bottom:96px;transform:translate(-50%,20px);opacity:0;z-index:90;background:#fff;color:#000;padding:12px 22px;border-radius:999px;font-size:.9rem;pointer-events:none;transition:all .4s;max-width:90vw;text-align:center}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="demo">Sample website by <a id="c1" href="#" target="_blank" rel="noopener">Digitera Levi</a>. Cars, prices and rates are for demonstration.</div>
+<div class="util"><div class="wrap"><span>Showroom open Mon to Sat, 9AM to 7PM</span><span>Test drives by appointment</span><a id="m1" href="#" target="_blank" rel="noopener">Chat on Messenger</a></div></div>
+<nav><div class="wrap">
+  <a class="logo" href="#top">VELOCE<small>MOTORS</small></a>
+  <ul><li><a href="#showroom">Showroom</a></li><li><a href="#why">Why Veloce</a></li><li><a href="#financing">Financing</a></li><li><a href="#trade">Trade-in</a></li><li><a href="#faq">FAQ</a></li></ul>
+  <button class="btn sm" data-book>Book test drive</button>
+</div></nav>
+
+<header class="hero" id="top">
+  <div class="poster" id="poster"></div>
+  <div class="wrap">
+    <div class="eyebrow">Luxury car showroom</div>
+    <h1>Drive the <em>extraordinary.</em></h1>
+    <p class="lead">Certified luxury cars, honest pricing and a showroom experience built around you. Visit us, or book a private viewing.</p>
+    <div class="cta"><button class="btn" data-book>Book a private viewing</button><a class="btn ghost" href="#showroom">Explore the showroom</a></div>
+    <div class="finder" id="finder">
+      <div><label for="fb">Body type</label><select id="fb"></select></div>
+      <div><label for="ff">Fuel</label><select id="ff"></select></div>
+      <div><label for="fp">Budget</label><select id="fp"></select></div>
+      <button class="btn" id="fgo" type="button">Search cars</button>
+    </div>
+  </div>
+</header>
+
+<section id="why"><div class="wrap">
+  <div class="head rv"><div><div class="lab">Why Veloce</div><h2>Built around trust</h2></div><p>Buying a luxury car should feel clear and calm. This is how we work.</p></div>
+  <div class="feat rv" id="feat"></div>
+</div></section>
+
+<section class="light" id="showroom"><div class="wrap">
+  <div class="head rv"><div><div class="lab">The showroom</div><h2>Choose your car</h2></div><div class="count" id="count"></div></div>
+  <div class="cars" id="cars"></div>
+</div></section>
+
+<section id="financing"><div class="wrap">
+  <div class="head rv"><div><div class="lab">Financing</div><h2>Estimate your monthly</h2></div><p>Pick a car, set your down payment and term. This is an estimate only.</p></div>
+  <div class="calc rv">
+    <div class="cpanel">
+      <label for="cc">Car</label><select id="cc"></select>
+      <label for="cd">Down payment: <b id="cdv">20%</b></label><input type="range" id="cd" min="10" max="60" step="5" value="20">
+      <label for="ct">Term</label><select id="ct"><option value="12">12 months</option><option value="24">24 months</option><option value="36" selected>36 months</option><option value="48">48 months</option><option value="60">60 months</option></select>
+      <p class="fine">Sample interest rate of 7.5% per year. Final approval, rate and terms depend on the bank or lender.</p>
+      <button class="btn" data-book data-fin>Ask about financing</button>
+    </div>
+    <div class="cpanel out">
+      <div class="lab" style="margin:0">Estimated monthly payment</div>
+      <div class="big" id="cm">&#8369;0</div>
+      <div class="row"><span>Car price</span><b id="cp">-</b></div>
+      <div class="row"><span>Down payment</span><b id="cdp">-</b></div>
+      <div class="row"><span>Amount financed</span><b id="cf">-</b></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="light" id="trade"><div class="wrap">
+  <div class="promo rv" id="promo">
+    <div><div class="lab" style="color:#cfd2d7">Trade-in</div><h2>Selling your current car?</h2></div>
+    <p>Get a free appraisal and use its value toward your next car.</p>
+    <button class="btn" data-book data-trade>Request an appraisal</button>
+  </div>
+</div></section>
+
+<section class="light" style="padding-top:0" id="faq"><div class="wrap faq">
+  <div class="head rv"><h2>Good to know</h2></div>
+  <details><summary>Can I test drive before I decide?</summary><p>Yes. Book a test drive and we will prepare the car for your visit.</p></details>
+  <details><summary>Are your cars inspected?</summary><p>Every car goes through an inspection, and we share the results with you before you decide.</p></details>
+  <details><summary>Do you help with financing?</summary><p>We guide you through bank and in-house options, and explain the terms clearly.</p></details>
+  <details><summary>Can I trade in my car?</summary><p>Yes. We appraise your car for free and apply its value to your purchase.</p></details>
+</div></section>
+
+<section class="band2" id="drive" aria-label="Veloce in motion"><div class="band-in wrap rv"><div class="eyebrow">Veloce Motors</div><h2>Luxury, in motion.</h2><p>See it, feel it, drive it. Book a private viewing and we will have your car ready when you arrive.</p><button class="btn" data-book>Book a private viewing</button></div></section>
+
+<footer><div class="wrap">
+  <div class="g">
+    <div><a class="logo" style="text-decoration:none" href="#top">VELOCE<small>MOTORS</small></a><p style="margin-top:14px;max-width:320px">A luxury car showroom focused on honest pricing and a calm buying experience.</p></div>
+    <div><h4>Visit</h4><p>Showroom open Mon to Sat<br>9AM to 7PM<br>Test drives by appointment</p></div>
+    <div><h4>Contact</h4><p><a id="m2" href="#" target="_blank" rel="noopener">Chat on Messenger</a></p></div>
+  </div>
+  <p class="cred">Website sample by <a id="c2" href="#" target="_blank" rel="noopener">Digitera Levi</a>. Need a site like this for your car business? <a id="c3" href="#" target="_blank" rel="noopener">Message me</a>.</p>
+</div></footer>
+<div class="mbar"><button class="btn" data-book>Book test drive</button></div>
+
+<dialog id="dlg"><form class="dlg" method="dialog" onsubmit="return false">
+  <h2 id="dt">Book a test drive</h2><p class="s">We confirm your slot on Messenger.</p>
+  <label for="nm">Full name</label><input id="nm" autocomplete="name">
+  <label for="mb">Mobile number</label><input id="mb" inputmode="tel" autocomplete="tel" placeholder="09xx xxx xxxx">
+  <label for="cs">Car</label><select id="cs"></select>
+  <label for="dd">Preferred date</label><input type="date" id="dd">
+  <label for="tm">Preferred time</label><select id="tm"><option>Morning</option><option>Afternoon</option><option>Evening</option></select>
+  <p class="msg" id="msg" role="status"></p>
+  <div class="row"><button type="button" class="btn ghost" id="cl">Cancel</button><button type="button" class="btn" id="go">Send request</button></div>
+</form></dialog>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+/* ============ EDIT THESE ============ */
+const MESSENGER_LINK = "https://www.messenger.com/t/118441451362301/";
+const CREDIT_LINK    = "https://digiteralevisystem.vercel.app/";
+const RATE = 0.075;                 // sample yearly interest rate
+const HERO_VIDEO = "https://res.cloudinary.com/dqo0bc4u/video/upload/v1791795138/Car_driving_on_coastal_road_20261012165202_vwkc5d.mp4";
+const VIDEO2 = "https://res.cloudinary.com/dqo0bc4u/video/upload/v1791795295/White_sports_sedan_driving_throu__20261012165442_tdgtbb.mp4";   // closing video band near the bottom
+// Cloudinary URLs. Empty = black placeholder. hero = poster, trade = promo background.
+const IMG = { hero:"https://res.cloudinary.com/dqo0bc4u/image/upload/v1791795585/Black_luxury_grand_tourer_coupe_20261012165933_jtc3tj.jpg", trade:"https://res.cloudinary.com/dqo0bc4u/image/upload/v1791796373/Black_luxury_car_headlight_closeup_20261012171243_w1ibnf.jpg",
+  c1:"https://res.cloudinary.com/dqo0bc4u/image/upload/v1791795415/Luxury_sedan_parked_in_showroom_20261012165646_zldsx8.jpg", c2:"https://res.cloudinary.com/dqo0bc4u/image/upload/v1791795585/Black_luxury_grand_tourer_coupe_20261012165933_jtc3tj.jpg", c3:"https://res.cloudinary.com/dqo0bc4u/image/upload/v1791795751/Luxury_SUV_in_studio_20261012170219_zmyejd.jpg", c4:"https://res.cloudinary.com/dqo0bc4u/image/upload/v1791795821/Electric_sport_sedan_in_showroom_20261012170332_wru2wu.jpg", c5:"https://res.cloudinary.com/dqo0bc4u/image/upload/v1791796199/Convertible_roadster_in_showroom_20261012170946_qtstcw.jpg", c6:"https://res.cloudinary.com/dqo0bc4u/image/upload/v1791796300/Black_luxury_SUV_in_studio_20261012171131_pjg6um.jpg" };   // hero = still shown if the video cannot play
+const CARS = [
+  {id:"c1", name:"Executive Sedan",     body:"Sedan",       fuel:"Petrol",   spec:"3.0L turbo",  year:2025, tag:"New",       price:4200000,  g:["#d9dbde","#8a8d92"]},
+  {id:"c2", name:"Grand Tourer Coupe",  body:"Coupe",       fuel:"Petrol",   spec:"4.0L V8",     year:2024, tag:"New",       price:12800000, g:["#1a1b1e","#4a4d53"]},
+  {id:"c3", name:"Performance SUV",     body:"SUV",         fuel:"Hybrid",   spec:"Plug-in hybrid", year:2025, tag:"New",    price:9400000,  g:["#202226","#5a5d63"]},
+  {id:"c4", name:"Electric Sport Sedan",body:"Sedan",       fuel:"Electric", spec:"Dual motor",  year:2025, tag:"New",       price:8900000,  g:["#e6e7e9","#9a9da3"]},
+  {id:"c5", name:"Open-Top Roadster",   body:"Convertible", fuel:"Petrol",   spec:"3.0L turbo",  year:2023, tag:"Certified", price:11200000, g:["#dcdde0","#7c7f85"]},
+  {id:"c6", name:"Flagship Luxury SUV", body:"SUV",         fuel:"Petrol",   spec:"3.5L V6",     year:2024, tag:"Certified", price:14500000, g:["#121316","#42454b"]}
+];
+const FEATS=[
+ ["Certified inspection","Every car is inspected and the report is shared before you decide.","M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z M9 12l2 2 4-4"],
+ ["Transparent pricing","Clear prices, with no surprise fees at the end.","M3 12l9-9h8v8l-9 9z M15.5 8.5h.01"],
+ ["Financing support","We explain bank and in-house options in plain language.","M3 7h18v10H3z M12 12m-2.5 0a2.5 2.5 0 105 0a2.5 2.5 0 10-5 0 M6 10v.01 M18 14v.01"],
+ ["Easy trade-in","Free appraisal, and its value goes toward your next car.","M4 12a8 8 0 0114-5.3L20 9 M20 4v5h-5 M20 12a8 8 0 01-14 5.3L4 15 M4 20v-5h5"],
+ ["Private viewings","Book a time, and the car is ready when you arrive.","M7 14a4 4 0 110-8 4 4 0 010 8z M10 10h11v3h-2v2h-3v-2h-3"],
+ ["After-sales care","Support after the sale, from papers to servicing.","M14 6a4 4 0 00-5 5L3 17l4 4 6-6a4 4 0 005-5l-3 3-3-1-1-3z"],
+ ["Real people","Direct replies and clear updates from day one.","M4 13a8 8 0 0116 0 M4 13v3a2 2 0 002 2h1v-5H4 M20 13v3a2 2 0 01-2 2h-1v-5h3"],
+ ["Attention to detail","Spotless cars and a calm, unhurried showroom.","M12 3l2.5 5.5L20 9.5l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-1z"]
+];
+/* ====================================== */
+const $=id=>document.getElementById(id);
+const peso=n=>"\u20B1"+Math.round(n).toLocaleString("en-PH");
+const mil=n=>"\u20B1"+(n/1e6).toFixed(1).replace(/\.0$/,"")+"M";
+const opt=(u,w)=>u.replace("/upload/","/upload/f_auto,q_auto,w_"+w+"/");
+["c1","c2"].forEach(i=>$(i).href=CREDIT_LINK);$("c3").href=MESSENGER_LINK;$("m1").href=MESSENGER_LINK;$("m2").href=MESSENGER_LINK;
+
+/* Hero: video if provided, poster otherwise */
+(function(){
+  const box=$("poster");
+  const calm=matchMedia("(prefers-reduced-motion: reduce)").matches||(navigator.connection&&navigator.connection.saveData);
+  const still=IMG.hero?'<img class="poster" src="'+opt(IMG.hero,1800)+'" alt="">':"";
+  if(!HERO_VIDEO||calm){box.outerHTML=still;return}
+  const v=document.createElement("video");v.autoplay=true;v.muted=true;v.loop=true;v.playsInline=true;v.preload="metadata";v.setAttribute("aria-hidden","true");
+  if(IMG.hero)v.poster=opt(IMG.hero,1800);
+  v.src=HERO_VIDEO.replace("/upload/","/upload/f_auto,q_auto,w_1280/");
+  v.onerror=()=>{v.onerror=null;v.src=HERO_VIDEO};
+  box.replaceWith(v);
+})();
+if(IMG.trade)$("promo").style.backgroundImage="url("+opt(IMG.trade,1400)+")";
+
+/* Why Veloce */
+$("feat").innerHTML=FEATS.map(f=>'<div class="fc"><div class="ic"><svg viewBox="0 0 24 24"><path d="'+f[2]+'"/></svg></div><h3>'+f[0]+'</h3><p>'+f[1]+'</p></div>').join("");
+
+/* Finder + showroom */
+const BUDGETS=[["any","Any budget",0,1e12],["5","Under 5M",0,5e6],["10","5M to 10M",5e6,10e6],["15","10M and above",10e6,1e12]];
+const uniq=k=>["All",...new Set(CARS.map(c=>c[k]))];
+const fill=(id,arr)=>$(id).innerHTML=arr.map(v=>'<option>'+v+'</option>').join("");
+fill("fb",uniq("body"));fill("ff",uniq("fuel"));$("fp").innerHTML=BUDGETS.map(b=>'<option value="'+b[0]+'">'+b[1]+'</option>').join("");
+function card(c){
+  const ph=IMG[c.id]?'<div class="ph"><span class="badge">'+c.tag+'</span><img src="'+opt(IMG[c.id],900)+'" alt="'+c.name+'" loading="lazy"></div>'
+    :'<div class="ph empty" style="background:linear-gradient(150deg,'+c.g[0]+','+c.g[1]+');color:'+(c.g[0]<"#7"?"#fff":"#111")+'"><span class="badge">'+c.tag+'</span>'+c.name+'</div>';
+  return '<article class="car rv">'+ph+'<div class="b"><h3>'+c.name+'</h3><div class="spec"><span>'+c.year+'</span><span>Automatic</span><span>'+c.fuel+'</span><span>'+c.spec+'</span></div>'+
+    '<div class="buy"><div class="price"><small>Price</small>'+mil(c.price)+'</div><button class="btn dark sm" type="button" data-book="'+c.id+'">Test drive</button></div></div></article>';
+}
+/* Cars are always shown. Filters only apply when the visitor presses Search cars. */
+let F={b:"All",f:"All",p:"any"};
+function render(){
+  const bud=BUDGETS.find(x=>x[0]===F.p);
+  const active=F.b!=="All"||F.f!=="All"||F.p!=="any";
+  let list=CARS.filter(c=>(F.b==="All"||c.body===F.b)&&(F.f==="All"||c.fuel===F.f)&&c.price>=bud[2]&&c.price<bud[3]);
+  let note="";
+  if(!list.length){list=CARS;note="No exact match for your search, so here are all our cars."}
+  $("cars").innerHTML=(note?'<div class="none" style="padding:0 0 4px;text-align:left;grid-column:1/-1">'+note+'</div>':"")+list.map(card).join("");
+  $("count").innerHTML=(note?"Showing all "+CARS.length+" cars":list.length+" of "+CARS.length+" cars")+(active?' <button type="button" id="rst" style="text-decoration:underline;margin-left:8px;color:inherit">Clear search</button>':"");
+  document.querySelectorAll("#cars .rv").forEach(el=>requestAnimationFrame(()=>el.classList.add("in")));
+}
+$("fgo").onclick=()=>{F={b:$("fb").value,f:$("ff").value,p:$("fp").value};render();$("showroom").scrollIntoView({behavior:"smooth"})};
+document.addEventListener("click",e=>{if(e.target.closest("#rst")){["fb","ff","fp"].forEach(i=>$(i).selectedIndex=0);F={b:"All",f:"All",p:"any"};render()}});
+
+/* Financing calculator */
+$("cc").innerHTML=CARS.map(c=>'<option value="'+c.id+'">'+c.name+' ('+mil(c.price)+')</option>').join("");
+function calc(){
+  const c=CARS.find(x=>x.id===$("cc").value),dp=+$("cd").value,n=+$("ct").value;
+  $("cdv").textContent=dp+"%";
+  const down=c.price*dp/100,loan=c.price-down,r=RATE/12;
+  const m=loan*r/(1-Math.pow(1+r,-n));
+  $("cm").textContent=peso(m);$("cp").textContent=peso(c.price);$("cdp").textContent=peso(down);$("cf").textContent=peso(loan);
+}
+["cc","cd","ct"].forEach(i=>$(i).addEventListener("input",calc));calc();
+
+/* Booking dialog -> Messenger */
+const dlg=$("dlg");
+$("cs").innerHTML='<option value="">Not sure yet</option>'+CARS.map(c=>'<option value="'+c.id+'">'+c.name+'</option>').join("");
+$("dd").min=new Date().toISOString().slice(0,10);
+let mode="drive";
+function openDlg(e){
+  const b=e.target.closest("[data-book]");if(!b)return;
+  mode=b.hasAttribute("data-fin")?"fin":b.hasAttribute("data-trade")?"trade":"drive";
+  $("dt").textContent=mode==="fin"?"Ask about financing":mode==="trade"?"Request an appraisal":"Book a test drive";
+  $("cs").value=b.dataset.book&&b.dataset.book!==""?b.dataset.book:(mode==="fin"?$("cc").value:"");
+  $("msg").textContent="";dlg.showModal?dlg.showModal():dlg.setAttribute("open","");
+}
+document.addEventListener("click",openDlg);
+$("cl").onclick=()=>dlg.close();dlg.addEventListener("click",e=>{if(e.target===dlg)dlg.close()});
+function toast(t){const e=$("toast");e.textContent=t;e.classList.add("show");clearTimeout(toast._t);toast._t=setTimeout(()=>e.classList.remove("show"),4200)}
+$("go").onclick=()=>{
+  const nm=$("nm").value.trim(),mb=$("mb").value.trim();
+  if(!nm||!mb){$("msg").textContent="Please add your name and mobile number.";return}
+  const c=CARS.find(x=>x.id===$("cs").value);
+  const head=mode==="fin"?"I'd like to ask about financing":mode==="trade"?"I'd like to request a trade-in appraisal":"I'd like to book a test drive";
+  const text="Hi Veloce Motors! "+head+":\nName: "+nm+"\nMobile: "+mb+"\nCar: "+(c?c.name+" ("+mil(c.price)+")":"Not sure yet")+(mode==="drive"?"\nPreferred date: "+($("dd").value||"Flexible")+"\nPreferred time: "+$("tm").value:"")+(mode==="fin"?"\nEstimate: "+$("cm").textContent+"/month, "+$("cd").value+"% down, "+$("ct").value+" months":"");
+  const open=()=>window.open(MESSENGER_LINK,"_blank","noopener");
+  const done=()=>{dlg.close();toast("Request copied. Paste it in Messenger and send.");setTimeout(open,900)};
+  if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(text).then(done,()=>{prompt("Copy your request, then paste it in Messenger:",text);open()});
+  else{prompt("Copy your request, then paste it in Messenger:",text);open()}
+};
+/* Closing video band: loads when it scrolls into view, pauses when it leaves */
+(function(){
+  const box=$("drive");
+  const calm=matchMedia("(prefers-reduced-motion: reduce)").matches||(navigator.connection&&navigator.connection.saveData);
+  if(!VIDEO2||calm)return;
+  let v=null;
+  new IntersectionObserver(es=>es.forEach(x=>{
+    if(x.isIntersecting){
+      if(!v){v=document.createElement("video");v.muted=true;v.loop=true;v.playsInline=true;v.preload="auto";v.setAttribute("aria-hidden","true");
+        v.src=VIDEO2.replace("/upload/","/upload/f_auto,q_auto,w_1280/");v.onerror=()=>{v.onerror=null;v.src=VIDEO2};box.prepend(v)}
+      const p=v.play();if(p&&p.catch)p.catch(()=>{});
+    }else if(v)v.pause();
+  }),{threshold:.2}).observe(box);
+})();
+render();
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}}),{threshold:.1});
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
